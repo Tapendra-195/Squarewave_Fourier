@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+project( Video )
+find_package( OpenCV REQUIRED )
+include_directories( ${OpenCV_INCLUDE_DIRS} )
+add_executable( Fourier_series Fourier_series.cpp )
+target_link_libraries( Fourier_series ${OpenCV_LIBS} )
